@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <include layout="@layout/progress_overlay"/>
+
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/parent_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:orientation="vertical"
+      >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/colorActionBarText"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:text=""
+        style="@style/EditTextStyle"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text=""
+        style="@style/EditTextStyle"
+        />
+
+    <TextView
+        android:id="@+id/btn_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="@dimen/space_s"
+        android:textSize="19sp"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorBigButton"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_s"
+        android:layout_marginLeft="@dimen/space_s"
+        android:layout_marginStart="@dimen/space_s"
+        android:layout_marginTop="@dimen/space_l"
+        android:stateListAnimator="@null"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        style="@style/PrimaryButton"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_s"
+        android:layout_marginLeft="@dimen/space_s"
+        android:layout_marginStart="@dimen/space_s"
+        android:layout_marginTop="@dimen/space_l"
+        android:orientation="horizontal"
+        >
+
+      <Button
+          android:id="@+id/facebook_button"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Facebook"
+          style="@style/FacebookButton"
+          />
+
+      <Space
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_weight="0.1"
+          />
+
+      <Button
+          android:id="@+id/google_button"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Google"
+          style="@style/GoogleButton"
+          />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_sign_up_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="@dimen/space_s"
+        android:textSize="19sp"
+        android:text="Sign up with email"
+        android:textColor="@color/colorBigButton"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btn_noDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_xxl"
+        android:layout_marginEnd="@dimen/space_xxxl"
+        android:layout_marginLeft="@dimen/space_xxxl"
+        android:layout_marginStart="@dimen/space_xxxl"
+        android:text="View Sarajevo Air"
+        android:textAllCaps="false"
+        style="@style/TransparentButton"
+        />
+  </LinearLayout>
+</RelativeLayout>

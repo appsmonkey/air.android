@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group
+      android:id="@+id/top_group"
+      android:checkableBehavior="single"
+      android:orderInCategory="0">
+  </group>
+
+  <group
+      android:id="@+id/bottom_group"
+      android:checkableBehavior="none"
+      android:orderInCategory="1000">
+    <item
+        android:id="@+id/menu_item_login"
+        android:title="@string/menu_login"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_item_add_device"
+        android:title="@string/add_device"/>
+    <item
+        android:id="@+id/menu_item_pm10"
+        android:title="@string/title_pm10"/>
+    <item
+        android:id="@+id/menu_item_pm2.5"
+        android:title="@string/title_pm2.5"/>
+    <item
+        android:id="@+id/menu_item_settings"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_item_device_refresh"
+        android:title="@string/menu_device_refresh"/>
+    <item
+        android:id="@+id/footer_spacer_1"
+        android:checkable="false"
+        android:enabled="false"
+        android:title=""/>
+    <item
+        android:id="@+id/footer_spacer_2"
+        android:checkable="false"
+        android:enabled="false"
+        android:title=""/>
+
+  </group>
+</menu>

@@ -1,0 +1,150 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">CityOS Air</string>
+    <string name="login_title">Log Into Device</string>
+    <string name="submit_btn">Submit</string>
+    <string name="default_loading_text">Loading…</string>
+    <string name="login_loading_text">Logging in…</string>
+    <string name="device_loading_text">Pulling new device data…</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="error_enter_email">Enter email</string>
+    <string name="error_valid_email">Enter valid email</string>
+    <string name="error_enter_password">Enter password</string>
+    <string name="error_wrong_pass">Wrong password.</string>
+    <string name="error_wrong_email">Email doesn\'t exist in database.</string>
+
+    <string name="error_server_problems">Server problem while logging in.</string>
+
+    <string name="menu_login">Log Into Device</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_device_refresh">Refresh Devices</string>
+
+    <!--Settings AQI-->
+
+    <string name="title_pm10">PM₁₀ Index</string>
+    <string name="title_pm2.5">PM₂.₅ Index</string>
+
+    <string name="subtitle_pm10">These are the PM₁₀ index values based on USA EPA\n and are based on a 24-hour average.</string>
+    <string name="subtitle_pm2.5">These are the PM₂.₅ index values based on USA EPA\n and are based on a 24-hour average.</string>
+
+    <string name="aqi_zero"></string>
+
+    <string name="aqi_zero_title">No data</string>
+    <string name="aqi_great_title">Great</string>
+    <string name="aqi_ok_title">OK</string>
+    <string name="aqi_sensitive_title">Sensitive beware</string>
+    <string name="aqi_unhealthy_title">Unhealthy</string>
+    <string name="aqi_very_unhealthy_title">Very Unhealthy</string>
+    <string name="aqi_hazardous_title">Hazardous</string>
+
+    <string name="aqi_great_text">Blue skies! Everyone can enjoy outdoors without risk!</string>
+    <string name="aqi_ok_text">Air quality is moderate and only a concern to people extra sensitive to air pollution</string>
+    <string name="aqi_sensitive_text">Unhealthy for kids, pregnant women, elderly, active adults, and people with lung disease, asthma. Reduce strenuous outdoor activities.</string>
+    <string name="aqi_unhealthy_text">Unhealthy for everyone, especially people with heart or lung disease. Everyone should avoid strenuous outdoor activities and wear a mask.</string>
+    <string name="aqi_very_unhealthy_text">Unhealthy for everyone, especially people with heart or lung disease. Everyone should avoid physical outdoor activities and wear a mask.</string>
+    <string name="aqi_hazardous_text">Emergency conditions. Air is hazardous to everyone. Everyone should avoid ALL outdoor activities or wear a mask.</string>
+
+    <string name="aqi_10_great_value">0–54</string>
+    <string name="aqi_10_ok_value">54–154</string>
+    <string name="aqi_10_sensitive_value">155–254</string>
+    <string name="aqi_10_unhealthy_value">255–354</string>
+    <string name="aqi_10_very_unhealthy_value">355–424</string>
+    <string name="aqi_10_hazardous_value">425+</string>
+
+    <string name="aqi_2.5_great_value">0–12</string>
+    <string name="aqi_2.5_ok_value">12.1–35.4</string>
+    <string name="aqi_2.5_sensitive_value">35.5–55.4""</string>
+    <string name="aqi_2.5_unhealthy_value">55.5–150.4</string>
+    <string name="aqi_2.5_very_unhealthy_value">150.5–250.4"</string>
+    <string name="aqi_2.5_hazardous_value">250.5+</string>
+
+
+    <string name="aqi_zero_ribbon">"No PM data"</string>
+    <string name="aqi_great_ribbon">GREAT</string>
+    <string name="aqi_ok_ribbon">OK</string>
+    <string name="aqi_sensitive_ribbon">SENSITIVE BEWARE</string>
+    <string name="aqi_unhealthy_ribbon">UNHEALTHY</string>
+    <string name="aqi_very_unhealthy_ribbon">VERY UNHEALTHY</string>
+    <string name="aqi_hazardous_ribbon">HAZARDOUS</string>
+
+    <!--Settings General-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_logout">Logout</string>
+    <string name="settings_login">Log Into Device</string>
+    <string name="settings_notifications_title">Notifications</string>
+    <string name="settings_notifications_detail">Receiving bad air alerts</string>
+    <string name="settings_notifications_detail_disabled">Receive bad air alerts</string>
+    <string name="settings_notifications_on">On</string>
+    <string name="settings_notifications_off">Off</string>
+    <string name="settings_notifications_notify">Notify me when air is:</string>
+    <string name="settings_notifications_notify_detail">Good, Unhealthy, Very Unhealthy, Hazardous</string>
+    <string name="settings_notifications_city">Current City</string>
+    <string name="settings_notifications_city_detail">Choose your city</string>
+    <string name="settings_notifications_city_sarajevo">Sarajevo</string>
+    <string name="settings_notifications_city_belgrade">Belgrade</string>
+
+
+    <!--Air Alerts-->
+    <string name="notif_alerts_title">Air Alerts</string>
+    <string name="notif_alerts_footer">Alerts are sent per pollution level.</string>
+    <string name="notif_alerts_good">Good</string>
+    <string name="notif_alerts_moderate">Moderate</string>
+    <string name="notif_alerts_sensitive">Unhealthy for sensitive</string>
+    <string name="notif_alerts_unhealthy">Unhealthy</string>
+    <string name="notif_alerts_very_unhealthy">Very unhealthy</string>
+    <string name="notif_alerts_hazardous">Hazardous</string>
+    <string name="title_activity_aqi">AQIActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="fetching_data">Fetching data</string>
+    <string name="unable_to_retrieve_data">Unable to retrieve data.</string>
+    <string name="no_data">No data to show.</string>
+    <string name="not_subscribed_to_alerts">You are not subscribed to any alerts</string>
+    <string name="unable_to_retrieve_alerts">Unable to retrieve data about your alerts</string>
+    <string name="choose_a_city">Choose a city</string>
+    <string name="cancel">Cancel</string>
+    <string name="device_changed">Changed %s</string>
+    <string name="month">Month</string>
+    <string name="week">Week</string>
+    <string name="day">Day</string>
+    <string name="live">Live</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="setup_account">Setup Account</string>
+    <string name="terms_and_conditions">By clicking \'Create account\', you agree to our <a href="https://cityos.io/privacy.static">Privacy Policy</a> and <a href="https://cityos.io/terms.static">Terms of Service</a>.</string>
+    <string name="date_of_birth">%1$s %2$s %3$s</string>
+    <string name="create_account">Create Account</string>
+    <string name="checking_email">Checking email</string>
+    <string name="email_exists">Email already exists</string>
+    <string name="you_must_fill_field">You must fill this field</string>
+    <string name="you_must_fill_birthday">You must fill your birthday</string>
+    <string name="string_continue">Continue</string>
+    <string name="email">Email</string>
+    <string name="new_password">New password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="code">Code</string>
+    <string name="connect_device_title">Connect to your Boxy device</string>
+    <string name="connect_device_description">After connecting the device in your WiFi settings, return to the application, select \'Configure\' and choose your wireless network to connect to. That\'s it!</string>
+    <string name="open_settings">Open settings</string>
+    <string name="configure_device">Configure device</string>
+    <string name="scanning_for_device">Scanning for Boxy devices…</string>
+    <string name="connecting">Connecting…</string>
+    <string name="choose_device_location">Choose device location</string>
+    <string name="add_device">Add Device</string>
+    <string name="choose_device_location_continue">Continue</string>
+    <string name="device_name">Device name</string>
+    <string name="indoor_device">Indoor device</string>
+    <string name="adding_device">Adding device…</string>
+    <string name="invalid_password">Invalid password format. Password must:\n\n
+    Contain at least 1 uppercase letter\n
+    Contain at least 1 digit\n
+    Contain at least 1 character\n
+    Be 8 characters long</string>
+    <string name="verify_email_screen_email_sent_message_text_view">We sent you an email at: \n<b>%1$s</b>\n\nPlease click activation link in email to continue.</string>
+    <string name="boxy_reconnecting_message">Boxy is resetting its WiFi connection. Please wait for your phone to re-established the internet connection, and for the internet signal in status bar reappear. Map should be loaded and visible as well.</string>
+    <string name="email_not_registered">Email not registered</string>
+    <string name="login_error_check_password_social">Invalid username or password.</string>
+</resources>

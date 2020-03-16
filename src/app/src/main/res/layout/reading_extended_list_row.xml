@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_reading_type"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            app:srcCompat="@drawable/ico_pm" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/colorTextDark"
+                android:id="@+id/tv_reading_identifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM₂.₅"/>
+
+            <View android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_reading_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/aqi_great_text"
+                android:textSize="14sp"
+                android:text="Great"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:textSize="21sp"
+                android:id="@+id/tv_reading_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/aqi_great_text"
+                android:text="-3"/>
+
+            <TextView
+                android:id="@+id/tv_reading_notation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorTextLight"
+                android:layout_alignBaseline="@id/tv_reading_value"
+                android:layout_toRightOf="@id/tv_reading_value"
+                android:layout_marginLeft="2dp"
+                android:text="C"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/ico_arrow"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFEF"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

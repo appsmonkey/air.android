@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.map.InfoMapFragment"
+    android:background="@color/white"
+    android:id="@+id/info_window_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/colorTextDark"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robert's Balcony"
+            android:layout_gravity="center"/>
+
+        <View android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/aqi_great_text"
+            android:textSize="12sp"
+            android:text="Great"
+            android:layout_gravity="center"/>
+
+        <View android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <!--PM2.5-->
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextLight"
+                        android:id="@+id/tv_reading_pm25_identifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="PM₂.₅"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:textColor="@color/colorTextDark"
+                            android:id="@+id/tv_reading_pm25_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="78" />
+
+                        <View android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_reading_pm25_notation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="@color/colorTextLight"
+                            android:layout_alignBaseline="@id/tv_reading_pm25_value"
+                            android:layout_toRightOf="@id/tv_reading_pm25_value"
+                            android:layout_marginLeft="3dp"
+                            android:text="μg/m³"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            <!--PM2.5 ENDS-->
+
+            <!--AIR_PM10-->
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextLight"
+                    android:id="@+id/tv_reading_pm10_identifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="PM₁₀"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorTextDark"
+                        android:id="@+id/tv_reading_pm10_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="106"
+                         />
+
+                    <View android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_reading_pm10_notation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorTextLight"
+                        android:layout_alignBaseline="@id/tv_reading_pm10_value"
+                        android:layout_toRightOf="@id/tv_reading_pm10_value"
+                        android:layout_marginLeft="3dp"
+                        android:text="μg/m³"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--AIR_PM10 ENDS-->
+            <!--Temp-->
+            <LinearLayout
+                android:id="@+id/temp_container"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextLight"
+                    android:id="@+id/tv_reading_temp_identifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Temp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorTextDark"
+                        android:id="@+id/tv_reading_temp_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-3" />
+
+                    <View android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_reading_temp_notation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorTextLight"
+                        android:layout_alignBaseline="@id/tv_reading_temp_value"
+                        android:layout_toRightOf="@id/tv_reading_temp_value"
+                        android:layout_marginLeft="3dp"
+                        android:text="℃"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--TEMP ENDS-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/ico_arrow"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

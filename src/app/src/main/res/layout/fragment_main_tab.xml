@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.MainActivity"
+    >
+
+  <RelativeLayout
+      android:id="@+id/main_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".MainActivity"
+      >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+  </RelativeLayout>
+
+  <!-- The navigation drawer -->
+  <com.google.android.material.navigation.NavigationView
+      android:id="@+id/navigation_view"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:background="@android:color/black"
+      android:fitsSystemWindows="true"
+      android:paddingStart="@dimen/design_navigation_padding_left_default"
+      android:paddingTop="@dimen/design_navigation_padding_top_default"
+      app:itemBackground="@android:color/transparent"
+      app:itemTextAppearance="@style/RobotoTextViewStyle"
+      app:itemTextColor="@color/selector_nav_items"
+      app:menu="@menu/drawer_menu"
+      app:theme="@style/MenuTextAppearance"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="@dimen/space_xs"
+        >
+
+      <Button
+          android:id="@+id/btn_menu_close"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@drawable/ico_close"
+          />
+
+    </LinearLayout>
+
+  </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

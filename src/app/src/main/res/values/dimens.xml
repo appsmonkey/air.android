@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="app_bar_height">180dp</dimen>
+  <dimen name="text_margin">16dp</dimen>
+
+
+  <!--Override-->
+  <dimen name="design_navigation_padding_top_default" tools:override="true">5dp</dimen>
+  <dimen name="design_navigation_padding_left_default" tools:override="true">15dp</dimen>
+  <dimen name="design_navigation_separator_vertical_padding" tools:override="true">20dp</dimen>
+
+  <!-- Image Sizes -->
+  <dimen name="image_xxxxs">8dp</dimen>
+  <dimen name="image_xxxs">16dp</dimen>
+  <dimen name="image_xxs">24dp</dimen>
+  <dimen name="image_xs">32dp</dimen>
+  <dimen name="image_s">40dp</dimen>
+  <dimen name="image_m">48dp</dimen>
+  <dimen name="image_l">56dp</dimen>
+  <dimen name="image_xl">64dp</dimen>
+  <dimen name="image_xxl">72dp</dimen>
+  <dimen name="image_xxxl">80dp</dimen>
+
+  <!-- Margins and padding-->
+  <dimen name="space_xxxs">4dp</dimen>
+  <dimen name="space_xxs">8dp</dimen>
+  <dimen name="space_xs">12dp</dimen>
+  <dimen name="space_s">16dp</dimen>
+  <dimen name="space_m">20dp</dimen>
+  <dimen name="space_l">24dp</dimen>
+  <dimen name="space_xl">28dp</dimen>
+  <dimen name="space_xxl">32dp</dimen>
+  <dimen name="space_xxxl">36dp</dimen>
+
+  <!--Button sizes-->
+  <dimen name="button_xs">24dp</dimen>
+  <dimen name="button_s">36dp</dimen>
+  <dimen name="button_m">40dp</dimen>
+  <dimen name="button_l">44dp</dimen>
+  <dimen name="button_xl">48dp</dimen>
+  <dimen name="button_xxl">56dp</dimen>
+
+  <!--Font sizes-->
+  <dimen name="font_h1">96dp</dimen>
+  <dimen name="font_h2">60dp</dimen>
+  <dimen name="font_h3">48dp</dimen>
+  <dimen name="font_h4">34dp</dimen>
+  <dimen name="font_h5">24dp</dimen>
+  <dimen name="font_h6">20dp</dimen>
+  <dimen name="font_body_1">16dp</dimen>
+  <dimen name="font_body_2">14dp</dimen>
+  <dimen name="font_body_3">12dp</dimen>
+  <dimen name="font_body_4">10dp</dimen>
+  <dimen name="font_body_5">8dp</dimen>
+
+  <!--Video Sizes-->
+  <dimen name="video_xs">64dp</dimen>
+  <dimen name="video_s">92dp</dimen>
+  <dimen name="video_m">128dp</dimen>
+  <dimen name="video_l">156dp</dimen>
+  <dimen name="video_xl">200dp</dimen>
+
+  <!--Card Size-->
+  <dimen name="card_radius">20dp</dimen>
+
+
+</resources>

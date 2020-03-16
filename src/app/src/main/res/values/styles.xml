@@ -1,0 +1,167 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorControlNormal">@color/colorTextDark</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+  <!-- Menu multiple lines style -->
+  <style name="MenuTextAppearance">
+    <item name="android:lines">3</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <!-- Splash screen theme -->
+  <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_background</item>
+  </style>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textSize">28sp</item>
+  </style>
+
+  <style name="switchStyle">
+    <item name="colorControlActivated">@color/colorSmallButton</item>
+  </style>
+
+  <style name="NavigationDrawerStyle">
+    <item name="android:textSize">20sp</item>
+  </style>
+
+  <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+    <item name="android:fontFamily">@font/texgyreadventor_regular</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/colorMenuBottomItems</item>
+  </style>
+
+  <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+  </style>
+
+  <style name="HugeButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_1</item>
+    <item name="android:minHeight">@dimen/button_xxl</item>
+    <item name="android:paddingTop">@dimen/space_xs</item>
+    <item name="android:paddingBottom">@dimen/space_xs</item>
+    <item name="android:paddingLeft">@dimen/space_l</item>
+    <item name="android:paddingRight">@dimen/space_l</item>
+  </style>
+
+  <style name="BigButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_2</item>
+    <item name="android:minHeight">@dimen/button_xl</item>
+    <item name="android:paddingTop">@dimen/space_xs</item>
+    <item name="android:paddingBottom">@dimen/space_xs</item>
+    <item name="android:paddingLeft">@dimen/space_l</item>
+    <item name="android:paddingRight">@dimen/space_l</item>
+  </style>
+
+  <style name="LargeButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_3</item>
+    <item name="android:minHeight">@dimen/button_l</item>
+    <item name="android:paddingTop">@dimen/space_xxs</item>
+    <item name="android:paddingBottom">@dimen/space_xxs</item>
+    <item name="android:paddingLeft">@dimen/space_l</item>
+    <item name="android:paddingRight">@dimen/space_l</item>
+  </style>
+
+  <style name="MediumButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_3</item>
+    <item name="android:minHeight">@dimen/button_m</item>
+    <item name="android:paddingTop">@dimen/space_xxs</item>
+    <item name="android:paddingBottom">@dimen/space_xxs</item>
+    <item name="android:paddingLeft">@dimen/space_l</item>
+    <item name="android:paddingRight">@dimen/space_l</item>
+  </style>
+
+  <style name="SmallButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_4</item>
+    <item name="android:minHeight">@dimen/button_s</item>
+    <item name="android:paddingTop">@dimen/space_xxxs</item>
+    <item name="android:paddingBottom">@dimen/space_xxxs</item>
+    <item name="android:paddingLeft">@dimen/space_l</item>
+    <item name="android:paddingRight">@dimen/space_l</item>
+  </style>
+
+  <style name="TinyButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_4</item>
+    <item name="android:minHeight">@dimen/button_xs</item>
+    <item name="android:paddingTop">@dimen/space_xxxs</item>
+    <item name="android:paddingBottom">@dimen/space_xxxs</item>
+    <item name="android:paddingLeft">@dimen/space_s</item>
+    <item name="android:paddingRight">@dimen/space_s</item>
+    <!--<item name="android:fontFamily">@font/inter_ui_bold</item>-->
+  </style>
+
+  <style name="LargeFlatButtonStyle" parent="ButtonStyle">
+    <item name="android:textSize">@dimen/font_body_3</item>
+    <item name="android:minHeight">@dimen/button_l</item>
+    <item name="android:paddingTop">@dimen/space_xxs</item>
+    <item name="android:paddingBottom">@dimen/space_xxs</item>
+    <item name="android:paddingLeft">@dimen/space_l</item>
+    <item name="android:paddingRight">@dimen/space_l</item>
+  </style>
+
+  <style name="PrimaryButton" parent="Base.TextAppearance.AppCompat.Button">
+    <item name="android:background">@drawable/button_filled_blue</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">12dp</item>
+    <item name="android:textSize">@dimen/font_h6</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="FacebookButton" parent="Base.TextAppearance.AppCompat.Button">
+    <item name="android:background">@drawable/button_filled_facebook</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">8dp</item>
+    <item name="android:textSize">@dimen/font_body_1</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="GoogleButton" parent="Base.TextAppearance.AppCompat.Button">
+    <item name="android:background">@drawable/button_filled_google</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">8dp</item>
+    <item name="android:textSize">@dimen/font_body_1</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="TransparentButton" parent="Base.TextAppearance.AppCompat.Button">
+    <item name="android:background">@drawable/button_border_only</item>
+    <item name="android:textColor">@color/colorPrimaryDark</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">12dp</item>
+    <item name="android:textSize">@dimen/font_h6</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="GrayButton" parent="Base.TextAppearance.AppCompat.Button">
+    <item name="android:background">@drawable/button_filled_gray</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">12dp</item>
+    <item name="android:textSize">@dimen/font_h6</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="PositiveButtonColor">
+    <item name="colorAccent">@color/colorBigButton</item>
+  </style>
+
+  <style name="EditTextStyle" parent="android:Widget.EditText">
+    <item name="android:textColor">@color/colorActionBarText</item>
+    <item name="android:textColorHint">@color/colorHint</item>
+    <item name="android:paddingTop">25dp</item>
+    <item name="android:paddingBottom">25dp</item>
+    <item name="android:paddingStart">25dp</item>
+    <item name="android:ems">10</item>
+    <item name="android:background">@drawable/edit_border</item>
+  </style>
+</resources>

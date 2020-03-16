@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+  <fragment
+      android:id="@+id/devices_map"
+      android:name="com.google.android.gms.maps.SupportMapFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  <fragment
+      android:id="@+id/info_fragment"
+      android:name="io.cityos.cityosair.ui.map.InfoMapFragment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:visibility="gone"
+      />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="25dp"
+      >
+
+    <io.cityos.cityosair.util.map.MapSegmentControl
+        android:id="@+id/map_segment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btn_menu"
+        android:layout_toLeftOf="@+id/btn_sensor"
+        android:layout_toRightOf="@+id/btn_menu"
+        android:layout_toStartOf="@+id/btn_sensor"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ico_menu_black"
+        style="@style/Widget.AppCompat.Button"
+        />
+
+    <Button
+        android:id="@+id/btn_sensor"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ic_sensor"
+        />
+
+  </RelativeLayout>
+
+</RelativeLayout>

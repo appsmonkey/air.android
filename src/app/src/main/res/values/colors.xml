@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F3F3F3</color>
+    <color name="colorPrimaryDark">#979797</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBigButton">#45cfdc</color>
+    <color name="colorSmallButton">#43c5db</color>
+    <color name="colorBigButtonSecond">#CFCFCF</color>
+    <color name="colorActionBarText">#4a4a4a</color>
+    <color name="colorHint">#C8C7CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="editTextGray">#D6D5D9</color>
+
+    <color name="colorTextDark">#4d4d4d</color>
+    <color name="colorTextMedium">#b8b8b8</color>
+    <color name="colorTextLight">#b0b0b0</color>
+    <color name="colorWhiteSmoke">#efefef</color>
+
+    <color name="colorMenuItemSelected">#2eeaff</color>
+    <color name="colorMenuBottomItems">#c9c9c9</color>
+
+    <color name="colorGraphTab">#ababab</color>
+    <color name="colorGraphSubtitle">#b2b2b2</color>
+    <color name="colorGraphPopupLine">#e6e6e6</color>
+    <color name="colorGraphPopupTitle">#b3b3b3</color>
+    <color name="colorGraphPopupSubtitle">#000000</color>
+
+    <color name="colorTextAqi">#9c9c9c</color>
+
+    <color name="colorTitleNotifications">#525252</color>
+    <color name="colorSubtitleNotifications">#a6a6a6</color>
+    <color name="colorNotificationsBlue">#43c5db</color>
+
+
+    <color name="aqi_great_background">#03d2e2</color>
+    <color name="aqi_ok_background">#9fd661</color>
+    <color name="aqi_sensitive_background">#efcc4b</color>
+    <color name="aqi_unhealthy_background">#fb943d</color>
+    <color name="aqi_very_unhealthy_background">#d262ca</color>
+    <color name="aqi_hazardous_background">#f6453d</color>
+
+    <color name="aqi_zero_text">#000000</color>
+    <color name="aqi_great_text">#02b8bc</color>
+    <color name="aqi_ok_text">#68a82a</color>
+    <color name="aqi_sensitive_text">#eabc28</color>
+    <color name="aqi_unhealthy_text">#ff8931</color>
+    <color name="aqi_very_unhealthy_text">#d816bd</color>
+    <color name="aqi_hazardous_text">#f6263d</color>
+
+    <color name="aqi_zero_gauge">#B8B8B8</color>
+    <color name="aqi_great_gauge">#75e2ea</color>
+    <color name="aqi_ok_gauge">#a1d78b</color>
+    <color name="aqi_sensitive_gauge">#f8e88b</color>
+    <color name="aqi_unhealthy_gauge">#f8ab73</color>
+    <color name="aqi_very_unhealthy_gauge">#d174c5</color>
+    <color name="aqi_hazardous_gauge">#f95356</color>
+
+
+    <!--GRAPH-->
+    <color name="graph_aqi_labels">#9e9e9e</color>
+    <color name="graph_labels">#cccccc</color>
+    <color name="graph_line">#efefef</color>
+
+    <color name="simple_top_gradient">#01bcf3</color>
+    <color name="simple_bottom_gradient">#01ead4</color>
+
+    <color name="hazardous_gradient">#e80009</color>
+    <color name="very_unhealthy_gradient">#d524a8</color>
+    <color name="unhealthy_gradient">#ff7930</color>
+    <color name="sensitive_gradient">#ffe934</color>
+    <color name="ok_gradient">#73c84e</color>
+    <color name="great_gradient">#03d2e2</color>
+
+
+    <!--MAP-->
+    <color name="map_fill_zero">#888888</color>
+    <color name="map_fill_great">#00f0ff</color>
+    <color name="map_fill_ok">#9ef83d</color>
+    <color name="map_fill_sensitive">#ffea00</color>
+    <color name="map_fill_unhealthy">#ffa800</color>
+    <color name="map_fill_very_unhealthy">#ae00ff</color>
+    <color name="map_fill_hazardous">#ff0000</color>
+
+    <color name="map_stroke_zero">#888888</color>
+    <color name="map_stroke_great">#00bfcb</color>
+    <color name="map_stroke_ok">#47bd00</color>
+    <color name="map_stroke_sensitive">#ffcc00</color>
+    <color name="map_stroke_unhealthy">#ffa800</color>
+    <color name="map_stroke_very_unhealthy">#ae00ff</color>
+    <color name="map_stroke_hazardous">#ff0000</color>
+
+    <color name="facebook_color">#4568B2</color>
+    <color name="google_color">#EA645E</color>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.cityos.cityosair">
+
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
+  
+  <application
+      android:name=".app.CityOSAirApplication"
+      android:allowBackup="false"
+      android:hardwareAccelerated="false"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:largeHeap="true"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme"
+      android:usesCleartextTraffic="true"
+      tools:replace="android:allowBackup"
+      tools:ignore="GoogleAppIndexingWarning">
+
+    <meta-data
+        android:name="com.urbanairship.autopilot"
+        android:value="io.cityos.cityosair.CityAutoPilot" />
+
+    <meta-data
+        android:name="com.urbanairship.webview.ENABLE_LOCAL_STORAGE"
+        android:value="true" />
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value=""/>
+
+    <activity
+        android:name="com.facebook.FacebookActivity"
+        android:configChanges=
+            "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:label="@string/app_name"/>
+    <activity
+        android:name="com.facebook.CustomTabActivity"
+        android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme=""/>
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".ui.main.MainActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".ui.main.SplashActivity"
+        android:launchMode="singleTask"
+        android:theme="@style/SplashTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <intent-filter android:label="CityOS App">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https"
+            android:host="links.cityos.io"
+            android:pathPrefix="/auth/validate" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".ui.onboarding.entrypoint.EntryActivity"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".ui.device.connectdevice.ConnectDeviceActivity"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".ui.onboarding.loginfragment.LoginActivity"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".ui.aqi.AQIActivity"
+        android:label="@string/title_activity_aqi"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"/>
+    <activity
+        android:name=".ui.settings.SettingsActivity"
+        android:label="@string/title_activity_settings"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"/>
+    <activity
+        android:name=".ui.notifications.NotificationActivity"
+        android:label="@string/title_activity_notification"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"/>
+    <activity
+        android:name=".ui.graph.GraphActivity"
+        android:screenOrientation="portrait"
+        android:label="@string/title_activity_graph"
+        android:theme="@style/AppTheme"/>
+
+    <!-- Debug Map Activity -->
+    <activity
+        android:name=".ui.map.cluster.DeviceClusterDebugActivity"
+        android:label="DeviceClusterDebugActivity"
+        android:theme="@style/AppTheme"/>
+
+    <meta-data
+        android:name="io.fabric.ApiKey"
+        android:value=""/>
+
+    <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+     -->
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key"/>
+
+  </application>
+
+</manifest>

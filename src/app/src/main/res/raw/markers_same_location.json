@@ -1,0 +1,7 @@
+[
+  { "lat" : 43.852329, "lng" : 18.370026, "title" : "Device 1", "snippet": "Device 1"},
+  { "lat" : 43.852329, "lng" : 18.370026, "title" : "Device 2", "snippet" : "Device 2"},
+  { "lat" : 43.852329, "lng" : 18.370026, "title" : "Device 3", "snippet": "Device 3"},
+  { "lat" : 43.852329, "lng" : 18.370026, "title" : "Device 4", "snippet": "Device 4" },
+  { "lat" : 43.852329, "lng" : 18.370026, "title" : "Device 5", "snippet": "Device 5"}
+]

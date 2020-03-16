@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <include
+      layout="@layout/progress_overlay"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="125dp"
+      />
+
+  <FrameLayout
+      android:id="@+id/map_fragment_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="0dp"
+      />
+
+  <LinearLayout
+      android:id="@+id/menu_linear_layout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      >
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/ico_menu"
+        style="@style/Widget.AppCompat.Button"
+        />
+
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/tv_deviceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="26sp"
+        app:minTextSize="16sp"
+        android:singleLine="false"
+        />
+
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ico_map"
+        />
+
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/tv_lastUpdated"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:text=""
+      android:textAlignment="center"
+      android:textColor="@color/colorTextMedium"
+      android:textSize="12sp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/menu_linear_layout"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="25dp"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="50dp"
+      />
+
+  <RelativeLayout
+      android:id="@+id/gauge_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="24dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_lastUpdated"
+      >
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#ffffff"
+        app:arc_bottom_text=""
+        app:arc_finished_color="@color/aqi_great_gauge"
+        app:arc_max="60"
+        app:arc_progress="10"
+        app:arc_stroke_width="22dp"
+        app:arc_text_color="@color/white"
+        app:arc_unfinished_color="#f5f5f5"
+        />
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ico_status_great"
+        />
+
+    <ImageView
+        android:id="@+id/iv_ribbon"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/arc_progress"
+        android:layout_marginBottom="3dp"
+        app:srcCompat="@drawable/ico_ribbon_great"
+        />
+
+    <TextView
+        android:id="@+id/tv_gauge_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_ribbon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:letterSpacing="0.1"
+        android:text="@string/aqi_great_ribbon"
+        android:textColor="@color/white"
+        android:textSize="13.4sp"
+        />
+
+  </RelativeLayout>
+
+  <pl.droidsonroids.gif.GifImageView
+      android:id="@+id/iv_loading_gif"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:src="@drawable/ico_loading"
+      app:layout_constraintBottom_toBottomOf="@+id/gauge_layout"
+      app:layout_constraintLeft_toLeftOf="@+id/gauge_layout"
+      app:layout_constraintRight_toRightOf="@+id/gauge_layout"
+      app:layout_constraintTop_toTopOf="@+id/gauge_layout"
+      />
+
+  <View
+      android:id="@+id/divider_view"
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/colorWhiteSmoke"
+      android:visibility="invisible"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/gauge_layout"
+      />
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:id="@+id/swipe_refresh_layout"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/divider_view"
+      >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/readings_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

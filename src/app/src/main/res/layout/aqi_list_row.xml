@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="15dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/color_container"
+            android:layout_width="0dp"
+            android:layout_weight=".30"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/round_corners"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_aqi_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0-54"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="μg/m³"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".70"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/round_corners_right"
+            android:backgroundTint="@color/colorWhiteSmoke"
+            >
+
+            <ImageView
+                android:id="@+id/iv_aqi_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/ico_aqi_great"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_aqi_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great!"
+                android:textColor="@color/aqi_great_text"
+                android:layout_marginLeft="14dp"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_aqi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/aqi_great_text"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextAqi"
+        android:letterSpacing="0.1"/>
+
+</LinearLayout>

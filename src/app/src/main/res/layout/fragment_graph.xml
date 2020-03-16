@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.graph.GraphActivity"
+    >
+
+  <!--Content-->
+
+  <RelativeLayout
+      android:id="@+id/graph_top_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp"
+      android:paddingStart="5dp"
+      android:paddingEnd="5dp"
+      android:layout_marginTop="15dp"
+      >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <TextView
+          android:id="@+id/tv_graph_reading"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:textColor="@color/colorTextDark"
+          android:textSize="33sp"
+          android:paddingStart="50dp"
+          android:paddingEnd="50dp"
+          android:textAlignment="center"
+          android:singleLine="false"
+          />
+
+      <Button
+          android:id="@+id/btn_graph_close"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_alignParentEnd="true"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center"
+          android:layout_marginEnd="15dp"
+          android:background="@drawable/ico_close"
+          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/value_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:layout_gravity="center"
+        >
+
+      <TextView
+          android:id="@+id/tv_graph_value"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textColor="@color/colorTextDark"
+          android:textSize="80sp"
+          />
+
+      <TextView
+          android:id="@+id/tv_graph_unit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/tv_graph_value"
+          android:layout_toEndOf="@+id/tv_graph_value"
+          android:text="μg/m³"
+          android:textColor="@color/colorGraphSubtitle"
+          android:textSize="16sp"
+          />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_graph_aqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/colorWhiteSmoke"
+        android:minWidth="75dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/aqi_very_unhealthy_text"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/graph_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+
+      <Button
+          android:id="@+id/btn_tab_live"
+          android:layout_width="70dp"
+          android:layout_height="35dp"
+          android:background="@drawable/round_corners"
+          android:text="@string/live"
+          android:textAppearance="@style/TextAppearance.AppCompat"
+          android:textColor="@color/colorGraphTab"
+          style="@style/Widget.AppCompat.Button.Borderless"
+          />
+
+      <View
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:layout_weight="1"
+          >
+      </View>
+
+      <Button
+          android:id="@+id/btn_tab_day"
+          android:layout_width="70dp"
+          android:layout_height="35dp"
+          android:background="@drawable/round_corners"
+          android:text="@string/day"
+          android:textAppearance="@style/TextAppearance.AppCompat"
+          android:textColor="@color/colorGraphTab"
+          style="@style/Widget.AppCompat.Button.Borderless"
+          />
+
+      <View
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:layout_weight="1"
+          >
+      </View>
+
+      <Button
+          android:id="@+id/btn_tab_week"
+          android:layout_width="70dp"
+          android:layout_height="35dp"
+          android:background="@drawable/round_corners"
+          android:text="@string/week"
+          android:textAppearance="@style/TextAppearance.AppCompat"
+          android:textColor="@color/colorGraphTab"
+          style="@style/Widget.AppCompat.Button.Borderless"
+          />
+
+      <View
+          android:id="@+id/month_view"
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:layout_weight="1"
+          >
+      </View>
+
+      <Button
+          android:id="@+id/btn_tab_month"
+          android:layout_width="70dp"
+          android:layout_height="35dp"
+          android:background="@drawable/round_corners"
+          android:text="@string/month"
+          android:textAppearance="@style/TextAppearance.AppCompat"
+          android:textColor="@color/colorGraphTab"
+          style="@style/Widget.AppCompat.Button.Borderless"
+          />
+
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

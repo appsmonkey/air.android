@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.onboarding.createaccount.verifyemail.VerifyEmailFragment">
+
+    <EditText
+        android:id="@+id/verify_email_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:paddingTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textIsSelectable="false"
+        android:foregroundTint="@android:color/black"
+        android:text="@string/verify_email_screen_email_sent_message_text_view" />
+
+</FrameLayout>
